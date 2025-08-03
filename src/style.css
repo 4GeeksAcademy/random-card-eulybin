@@ -1,5 +1,54 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+@font-face {
+  font-family: 'JqkasWild';
+  src: url('./assets/JqkasWild-w1YD6.ttf') format('truetype');
+}
 
-body{
-    background: white;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: url(./assets/table.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: 'JqkasWild';
+}
+
+.card {
+  /* ratio matches standard poker card */
+  height: 570px;
+  width: 407px;
+  margin-bottom: 40px;
+  background-color: #eae9ed;
+  border-radius: 18px;
+  box-shadow: 2px 2px 25px rgb(33, 33, 33);
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suit {
+  font-size: 88px;
+}
+
+.top {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  transform: rotate(180deg);
 }
